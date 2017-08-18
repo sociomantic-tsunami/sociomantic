@@ -1,5 +1,7 @@
 # Sociomantic Code of Conduct
 
+v1.1.0
+
 ## Purpose
 
 As our company mission states, we are here to continuously innovate the world’s most trusted personalized media platform and that vital _trust_ is what bonds us not only to our clients, but also to each other. It’s our intention to help define and foster such trust with the use of a shared Code of Conduct. These commitments should represent our people and our company to provide us a safe work environment and reputable image.
@@ -24,6 +26,7 @@ As our company mission states, we are here to continuously innovate the world’
     * [Politics](#13-politics)
  * [Speak Up](#speak-up)
  * [Contributions](#contributions)
+ * [Versioning](#versioning)
 
 ## Our Commitments
 
@@ -69,4 +72,8 @@ In case of uncertainty about any of the commitments or if you have witnessed a b
 
 ## Contributions
 
-Have you found that something in this document is missing, incorrect or otherwise subject to constructive criticism? If so, please feel free to make a pull request to our Code of Conduct on GitHub or download, edit and send in the workable text document to the Sociomantic Legal Department.
+Have you found that something in this document is missing, incorrect or otherwise subject to constructive criticism? If so, please feel free to make a pull request to our Code of Conduct on GitHub or download, edit and send in the workable text document to the Sociomantic Legal Department.
+
+## Versioning
+
+We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.1.0.
