@@ -4,6 +4,10 @@ Our Code of Conduct is intended to create a safe and enjoyable working atmospher
 
 # Change Log
 
+## V1.0.2
+
+ * Removed reference to internal policies (as links cannot be provided at this time).
+
 ## v1.0.1
 
  * Fixed broken anchor links in the Contents section.

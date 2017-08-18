@@ -23,7 +23,6 @@ As our company mission states, we are here to continuously innovate the world’
     * [Corporate Identity and Reputation](#12-corporate-identity-and-reputation)
     * [Politics](#13-politics)
  * [Speak Up](#speak-up)
- * [Related Policies](#related-policies)
  * [Contributions](#contributions)
 
 ## Our Commitments
@@ -66,9 +65,7 @@ Where necessary, we ensure that the information has been encrypted in accordance
 As a company, we have no political affiliations and we do not make political donations to parties or candidates. We respect our mutual rights to be politically active, as long as this is kept separate from work duties and doesn’t influence behavior towards customers and colleagues.## Speak Up
 
 In case of uncertainty about any of the commitments or if you have witnessed a breach, please contact:
- * Your Sociomantic Team Lead / Department Head; * Your Sociomantic HR Department / Legal Department; or * The Speak Up Line, which allows confidential and anonymous reporting of an incident (as explained in the Global Whistleblowing Policy).## Related Policies
-
- * Sociomantic Expense Policy * Sociomantic Security Policy * dunnhumby Global Anti-Bribery Policy * dunnhumby Global Whistleblowing Policy  * dunnhumby Global Gift and Entertainment Policy
+ * Your Sociomantic Team Lead / Department Head; * Your Sociomantic HR Department / Legal Department; or * The Speak Up Line, which allows confidential and anonymous reporting of an incident (as explained in the Global Whistleblowing Policy).
 
 ## Contributions
 
