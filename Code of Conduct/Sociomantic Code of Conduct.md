@@ -1,6 +1,6 @@
 # Sociomantic Code of Conduct
 
-v1.1.0
+v1.2.0
 
 ## Purpose
 
@@ -25,6 +25,7 @@ As our company mission states, we are here to continuously innovate the world’
     * [Corporate Identity and Reputation](#12-corporate-identity-and-reputation)
     * [Politics](#13-politics)
  * [Speak Up](#speak-up)
+ * [Consequences](#consequences)
  * [Contributions](#contributions)
  * [Versioning](#versioning)
 
@@ -70,10 +71,14 @@ As a company, we have no political affiliations and we do not make political don
 In case of uncertainty about any of the commitments or if you have witnessed a breach, please contact:
  * Your Sociomantic Team Lead / Department Head; * Your Sociomantic HR Department / Legal Department; or * The Speak Up Line, which allows confidential and anonymous reporting of an incident (as explained in the Global Whistleblowing Policy).
 
+## Consequences
+
+If an employee engages in unacceptable behavior (i.e. breach of our Code of Conduct) the company will respond with the appropriate action, up to and including dismissal. In the case of breaches which cross legal lines, authorities may be involved as well, resulting in appropriate actions that could go beyond dismissal.
+
 ## Contributions
 
 Have you found that something in this document is missing, incorrect or otherwise subject to constructive criticism? If so, please feel free to make a pull request to our Code of Conduct on GitHub or download, edit and send in the workable text document to the Sociomantic Legal Department.
 
 ## Versioning
 
-We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.1.0.
+We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.0.
