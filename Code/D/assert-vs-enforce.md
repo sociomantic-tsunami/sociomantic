@@ -17,32 +17,32 @@ convention.
 In D2, failed assertions throw `AssertError`, which (being an `Error`) is
 ignored by `catch (Exception)`. It can still be caught by `catch(Error)` or
 `catch(Throwable)` but that may leave the program in a broken state, by
-specification_. In practice, that means that destructors and `scope(exit)`
-blocks may be ignored in some situations, depending on compiler implementation,
-making it suitable only to peform slightly more verbose message printing or data
-dump before termination. Recovery from `Error` is considered impossible.
+[specification](http://dlang.org/expression.html#AssertExpression). In practice,
+that means that destructors and `scope(exit)` blocks may be ignored in some
+situations, depending on compiler implementation, making it suitable only to
+peform slightly more verbose message printing or data dump before termination.
+Recovery from `Error` is considered impossible.
 
-.. _specification: http://dlang.org/expression.html#AssertExpression
-
-When compiled with ``-release``, assertions are completely disabled and
+When compiled with `-release`, assertions are completely disabled and
 execution will continue normally even if condition would be violated in
 non-release builds, possibly corrupting the program if it does not have any
 other protection checks.
 
 `assert(0)` (with `0` being known at compile-time) is a special case in both D1
-and D2.  It remains in the program even when compiled with ``-release`` and gets
+and D2.  It remains in the program even when compiled with `-release` and gets
 replaced with an `HLT` instruction which will usually cause program to crash
 because, on modern linux systems, this instruction is only allowed in kernel
 privileged mode. Any custom assertion message will be ignored in that case.
 `assert(0)` means "unreachable code" and is recognized as such by the compiler
-during code flow analysis (i.e. checking for unreachable statements with ``-w``).
+during code flow analysis (i.e. checking for unreachable statements with `-w`).
 
 Contracts
 ---------
 
-The official spec has an extensive article_ describing the "Design by Contract"
-ideology. To put it shortly, contracts are extended versions of assertions that
-put additional semantics on how exactly program sanity is checked.
+The official spec has an extensive [article](http://dlang.org/contracts.html)
+describing the "Design by Contract" ideology. To put it shortly, contracts are
+extended versions of assertions that put additional semantics on how exactly
+program sanity is checked.
 
 Functions/methods have `in` and `out` contracts, checking pre-conditions and
 post-conditions respectively. `out` contracts have access to the function's
@@ -54,10 +54,8 @@ constructor, destructor, or any public method of the aggregate is called (check
 official docs for a more precise explanation of the invariant rules).
 
 The same as assertions, invariants are completely removed from the program when
-compiled in ``-release`` mode and have the same intended meaning -- verification
+compiled in `-release` mode and have the same intended meaning -- verification
 of internal program sanity.
-
-.. _article: http://dlang.org/contracts.html
 
 enforce
 -------
@@ -83,7 +81,7 @@ However, in the case of a server application working primarily with external
 data, it is very hard to get to the point of such confidence, especially if any
 error can have a potentially very costly impact on business. Even full test
 coverage can be misleading. This has resulted in some application never using
-the ``-release`` flag out of fear of possible uncaught programmer errors.
+the `-release` flag out of fear of possible uncaught programmer errors.
 
 After some discussion, it was agreed that we need a more practical approach to
 using contracts, even if it will violate the intended DbC ideology. Most known
@@ -138,7 +136,7 @@ checks that verify program sanity and help find the issue as early as possible.
 requests) as early as possible with enforces or similar exception-throwing
 checks. Using tagged type wrappers is one approach of ensuring that no part of
 the application works with non-validated data by accident. One example of such a
-type is the `Contiguous` struct from ``ocean.util.serialize.contiguous``.
+type is the `Contiguous` struct from `ocean.util.serialize.contiguous`.
 
 5. When thinking about application memory safety, assume that no contracts are
 present. They are to make debugging the issue more convenient, not to actually
