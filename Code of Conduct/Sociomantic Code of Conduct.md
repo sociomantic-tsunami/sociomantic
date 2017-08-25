@@ -1,5 +1,7 @@
 # Sociomantic Code of Conduct
 
+v1.2.0
+
 ## Purpose
 
 As our company mission states, we are here to continuously innovate the world’s most trusted personalized media platform and that vital _trust_ is what bonds us not only to our clients, but also to each other. It’s our intention to help define and foster such trust with the use of a shared Code of Conduct. These commitments should represent our people and our company to provide us a safe work environment and reputable image.
@@ -23,8 +25,9 @@ As our company mission states, we are here to continuously innovate the world’
     * [Corporate Identity and Reputation](#12-corporate-identity-and-reputation)
     * [Politics](#13-politics)
  * [Speak Up](#speak-up)
- * [Related Policies](#related-policies)
+ * [Consequences](#consequences)
  * [Contributions](#contributions)
+ * [Versioning](#versioning)
 
 ## Our Commitments
 
@@ -66,10 +69,16 @@ Where necessary, we ensure that the information has been encrypted in accordance
 As a company, we have no political affiliations and we do not make political donations to parties or candidates. We respect our mutual rights to be politically active, as long as this is kept separate from work duties and doesn’t influence behavior towards customers and colleagues.## Speak Up
 
 In case of uncertainty about any of the commitments or if you have witnessed a breach, please contact:
- * Your Sociomantic Team Lead / Department Head; * Your Sociomantic HR Department / Legal Department; or * The Speak Up Line, which allows confidential and anonymous reporting of an incident (as explained in the Global Whistleblowing Policy).## Related Policies
+ * Your Sociomantic Team Lead / Department Head; * Your Sociomantic HR Department / Legal Department; or * The Speak Up Line, which allows confidential and anonymous reporting of an incident (as explained in the Global Whistleblowing Policy).
 
- * Sociomantic Expense Policy * Sociomantic Security Policy * dunnhumby Global Anti-Bribery Policy * dunnhumby Global Whistleblowing Policy  * dunnhumby Global Gift and Entertainment Policy
+## Consequences
+
+If an employee engages in unacceptable behavior (i.e. breach of our Code of Conduct) the company will respond with the appropriate action, up to and including dismissal. In the case of breaches which cross legal lines, authorities may be involved as well, resulting in appropriate actions that could go beyond dismissal.
 
 ## Contributions
 
-Have you found that something in this document is missing, incorrect or otherwise subject to constructive criticism? If so, please feel free to make a pull request to our Code of Conduct on GitHub or download, edit and send in the workable text document to the Sociomantic Legal Department.
+Have you found that something in this document is missing, incorrect or otherwise subject to constructive criticism? If so, please feel free to make a pull request to our Code of Conduct on GitHub or download, edit and send in the workable text document to the Sociomantic Legal Department.
+
+## Versioning
+
+We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.0.
