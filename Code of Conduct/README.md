@@ -1,8 +1,12 @@
-# Sociomantic Code of Conduct v1.2.1
+# Sociomantic Code of Conduct v1.2.2
 
 Our Code of Conduct is intended to create a safe and enjoyable working atmosphere for our employees internally as well as our fellow beings externally as well.
 
 # Change Log
+
+## v1.2.2
+
+ * Adjusted the Consequences section to include the potential (and more common consequence) of warning(s).
 
 ## v1.2.1
 

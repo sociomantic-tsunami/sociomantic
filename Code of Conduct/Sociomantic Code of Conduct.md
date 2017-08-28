@@ -1,6 +1,6 @@
 # Sociomantic Code of Conduct
 
-v1.2.1
+v1.2.2
 
 ## Purpose
 
@@ -77,7 +77,7 @@ In case of uncertainty about any of the commitments or if you have witnessed a b
 
 ## Consequences
 
-If an employee engages in unacceptable behavior (i.e. breach of our Code of Conduct) the company will respond with the appropriate action, up to and including dismissal. In the case of breaches which cross legal lines, authorities may be involved as well, resulting in appropriate actions that could go beyond dismissal.
+If an employee engages in unacceptable behavior (i.e. breach of our Code of Conduct) the company will respond with the appropriate action, such as warnings or even up to and including dismissal. In the case of breaches which cross legal lines, authorities may be involved as well, resulting in appropriate actions that could go beyond dismissal.
 
 ## Contributions
 
@@ -85,4 +85,4 @@ Have you found that something in this document is missing, incorrect or otherwis
 
 ## Versioning
 
-We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.1.
+We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.2.
