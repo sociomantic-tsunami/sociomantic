@@ -1,6 +1,6 @@
 # Sociomantic Code of Conduct
 
-v1.2.0
+v1.2.1
 
 ## Purpose
 
@@ -54,7 +54,11 @@ We will always comply with all applicable laws, regulations and trading restrict
 
 We are committed to comply with local and international financial reporting rules, as well as Tesco Group’s internal reporting policies. We are committed to complying with anti-money laundering laws and regulations. This means we will not knowingly accept any object, including payment, which is the proceed of an unlawful act as governed by applicable anti-money laundering laws.### 9. Prevention of Bribery and Corruption
 
-As a business, we adopt a zero tolerance approach to bribery and corruption. We never offer or accept payments, gifts, entertainment or any other benefit to or from the representative of any customer, supplier, government agency, or other institution in order to secure any illegal or unfair benefit. We expect everyone who works with us, including contractors and agents, to do the same. We strictly follow our Sociomantic Expense Policy, as well as dunnhumby’s Global Anti-Bribery Policy and Global Gift and Entertainment Policy.### 10. Company Resources
+As a business, we adopt a zero tolerance approach to bribery and corruption. We never offer or accept payments, gifts, entertainment or any other benefit to or from the representative of any customer, supplier, government agency, or other institution in order to secure any illegal or unfair benefit. We expect everyone who works with us, including contractors and agents, to do the same. We strictly follow our Sociomantic Expense Policy, as well as dunnhumby’s Global Anti-Bribery Policy and Global Gift and Entertainment Policy, which state three important things:
+
+ * We never give or accept cash gifts (or cash equivalent gifts, such as vouchers) irrespective of the value.
+ * We always approve gifts over the value of £50 (or in each case the local currency equivalent) with our direct manager(s) first.
+ * We never give or accept gifts over the value of £100 (or £250 if the gift is given in the form of travel or entertainment costs).### 10. Company Resources
 
 We use company hardware, software and physical amenities responsibly and in accordance with our Security Policy.### 11. Confidential Information and Personal Data
 
@@ -81,4 +85,4 @@ Have you found that something in this document is missing, incorrect or otherwis
 
 ## Versioning
 
-We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.0.
+We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.1.
