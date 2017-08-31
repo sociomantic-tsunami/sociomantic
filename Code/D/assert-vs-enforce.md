@@ -121,30 +121,72 @@ error messages.
 Guidelines
 ==========
 
-1. For simple safety conditions (pointer checks, integer expressions) prefer
-`enforce` even if it is intended to protect against programmer error.
+What Kind of Error Check to Use?
+--------------------------------
 
-2. Avoid using `in` contracts unless in private functions / methods. Try
-ensuring that any scenario that is being protected against is also verified by
-at least some other non-assert check in the application.
+1. Checks for programmer error / basic sanity or safety (e.g. pointer checks,
+integer expressions) should be performed using ocean's `verify`
+(`ocean.core.Verify`), which throws an exception of type `SanityException` upon
+failure. These checks are still present in release builds.
 
-3. `out` and `invariant` contracts are good but should never be used to
-_protect_ against errors. They are well-suited to put computationally costly
-checks that verify program sanity and help find the issue as early as possible.
+2. Checks on external data should use ocean's `enforce` (`ocean.core.Enforce`)
+(or another exception-throwing mechanism), but _not_ `verify`. This is in order
+to distinguish types of error. These checks are still present in release builds.
 
-4. Try to verify any external data (e.g. coming from the DHT or database or SSP
-requests) as early as possible with enforces or similar exception-throwing
+3. The built-in `assert` should _only_ be used as a means to spot issues earlier
+in the debugging process. It should never be relied upon for error checking in
+a live application, as it is not present in release builds. In practice, this
+means that anything checked by `assert`s must also be covered at some point in
+the code by `verify`, `enforce`, etc. In this way, the error conditions will
+still be checked in release builds, but non-release builds can benefit from
+additional error checks to aid debugging.
+
+4. Contracts (`in`, `out`, `invariant`) should only use `assert`, not `verify`,
+`enforce`, etc. This is because contracts are not compiled in release builds, so
+placing release-build checks such as `verify` inside contracts is useless.
+
+General Error Checking Principles
+---------------------------------
+
+1. Try to verify any external data (e.g. coming from the DHT or database or SSP
+requests) as early as possible with `enforce`s or similar exception-throwing
 checks. Using tagged type wrappers is one approach of ensuring that no part of
 the application works with non-validated data by accident. One example of such a
 type is the `Contiguous` struct from `ocean.util.serialize.contiguous`.
 
-5. When thinking about application memory safety, assume that no contracts are
+2. When thinking about application memory safety, assume that no contracts are
 present. They are to make debugging the issue more convenient, not to actually
 prevent it happening.
 
-6. As an extra safety measure, do at least one test deployment of a live service
-compiled with debug mode before updating all services in all regions / servers.
-One service which responds more slowly (due to being built in debug mode)
-shouldn't have a critical impact on the overall performance of the system, but
-it can help to find any additional issues triggered only by real-world traffic
-load.
+3. `in` contracts (containing `assert`s) should only be used on private methods/
+functions which are called via a public API including `verify`/`enforce` checks.
+`in` contracts on non-private methods/functions should be avoided.
+
+4. `out` and `invariant` contracts are good, but should never be used to
+_protect_ against errors. They are well-suited to perform computationally costly
+checks that verify program sanity and help find the issue as early as possible.
+
+5. As an extra safety measure for multi-instance services, do at least one test
+deployment of a live service compiled with debug mode before updating all
+services in all regions / servers. One service which responds more slowly (due
+to being built in debug mode) shouldn't have a critical impact on the overall
+performance of the system, but it can help to find any additional issues
+triggered only by real-world traffic load.
+
+Adapting Older Code
+-------------------
+
+A lot of code was written before the advent of `enforce` and `verify`. The
+following rules of thumb may be helpful when adapting such code to comply to the
+previous guidelines:
+
+* Generally, whenever an `assert` is present, you must ensure that the condition
+is being checked by a `verify` or `enforce` at some point in the code. If this
+is not the case, convert the `assert` to a `verify` statement.
+
+* All checks in `in` contracts should be converted to `verify` statements in the
+method/function body.
+
+* `out` contracts and `invariant`s can remain as they are, using `assert`s. They
+will not be present in release builds.
+
