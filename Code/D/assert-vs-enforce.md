@@ -60,7 +60,7 @@ of internal program sanity.
 enforce
 -------
 
-`enforce` is a helper function provided by the `ocean.core.Exception` module and
+`enforce` is a helper function provided by the `ocean.core.Enforce` module and
 originally inspired by Phobos' `std.exception.enforce`. It mimicks the syntax of
 `assert`, but throws a user-defined exception object (`new Exception` by
 default).
