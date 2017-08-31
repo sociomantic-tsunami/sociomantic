@@ -112,23 +112,22 @@ or not).
 Goals
 =====
 
-All suggested guidelines come from a simple goal - eventually it should be
-possible to compile our applications with `-release` flag without introducing
-serious business risks.
+All suggested guidelines stem from a simple goal -- it should be possible to
+compile our applications with the `-release` flag without introducing serious
+business risks.
 
-"serious business risks" here mean anything that will cause money loss to
-the company - logical violations that can result in broken bid values,
-memory corruption that can damage stored user profiles, simultaneous
-denial of service for majority of deployed services. Crashing or
-small non-corrupting data loss is not considered a serious risk because
-at current system scale it doesn't make a big impact for the system as
-a whole.
+"Serious business risks" here means anything that will cause money loss to the
+company -- logical violations that can result in broken bid values, memory
+corruption that can damage stored user profiles, simultaneous denial of service
+for majority of deployed services, and so on. Crashing or small non-corrupting
+data loss is not considered a serious risk because at the current system scale
+it doesn't make a big impact for the system as a whole.
 
-Considering the before-mentioned issues this goal limits contracts/asserts to
-relative narrow specialization - introducing additional costly sanity checks to
-help in debugging and testing. With such an approach application compiled in
-release mode won't compromise safety - it will simply provide less convenient
-error messages.
+Considering the aforementioned issues, this goal limits contracts/`assert`s to
+a relativly specialised usage -- introducing additional costly sanity checks
+to help in debugging and testing. With such an approach, compiling an
+application in release mode won't compromise safety -- it will simply provide
+less convenient error messages.
 
 Guidelines
 ==========
