@@ -69,6 +69,18 @@ Enforcements are designed to be a tool for error handling, to conveniently
 protect against possible error conditions that are unlikely in the main code
 flow but can still happen in deployed applications.
 
+verify
+------
+
+`verify` is a helper function provided by the `ocean.core.Verify` module. It
+mimicks the syntax of `assert`, but throws an exception of type
+`SanityException`.
+
+`verify` is designed to be a tool for catching programmer errors and basic
+sanity / safety errors. These are usually considered highly unlikely to occur,
+but must be handled by the normal exception mechanism, if they do occur in a
+live application.
+
 Issues
 ======
 
