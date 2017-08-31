@@ -1,4 +1,4 @@
-Relevant concepts explained
+Relevant Concepts Explained
 ===========================
 
 assert
