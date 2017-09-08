@@ -81,6 +81,21 @@ sanity / safety errors. These are usually considered highly unlikely to occur,
 but must be handled by the normal exception mechanism, if they do occur in a
 live application.
 
+test
+----
+
+`test` is a helper function provided by the `ocean.core.Test` module. It is
+simply a variant of `enforce` which throws exceptions of a specific type
+(`TestException`). `test` has two forms: one which mimicks the syntax of
+`assert` and one with a different syntax which produces more detailed error
+messages on failure.
+
+`test` (along with the other helpers in the module) is designed to be used in
+all unittests, in place of `assert`. The prime motivation for this is to make it
+possible to have a unittest runner which does not exit upon the first
+encountered failure. (With standard `assert`s -- which throw `Error` -- this is
+illegal per the language specification.)
+
 Issues
 ======
 
@@ -155,6 +170,10 @@ additional error checks to aid debugging.
 4. Contracts (`in`, `out`, `invariant`) should only use `assert`, not `verify`,
 `enforce`, etc. This is because contracts are not compiled in release builds, so
 placing release-build checks such as `verify` inside contracts is useless.
+
+5. Error checks in unittests should be performed using the helper functions in
+`ocean.core.Test` (e.g. `test`, `testThrown`), which throw exceptions of type
+`TestException`.
 
 General Error Checking Principles
 ---------------------------------
