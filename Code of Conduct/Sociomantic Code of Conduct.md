@@ -1,6 +1,6 @@
 # Sociomantic Code of Conduct
 
-v1.2.2
+v1.2.3
 
 ## Purpose
 
@@ -79,9 +79,9 @@ We are committed to comply with local and international financial reporting rule
 
 As a business, we adopt a zero tolerance approach to bribery and corruption. We never offer or accept payments, gifts, entertainment or any other benefit to or from the representative of any customer, supplier, government agency, or other institution in order to secure any illegal or unfair benefit. We expect everyone who works with us, including contractors and agents, to do the same. We strictly follow our Sociomantic Expense Policy, as well as dunnhumby’s Global Anti-Bribery Policy and Global Gift and Entertainment Policy, which state three important things:
 
- * We never give or accept cash gifts (or cash equivalent gifts, such as vouchers) irrespective of the value.
- * We always approve gifts over the value of £50 (or in each case the local currency equivalent) with our direct manager(s) first.
- * We never give or accept gifts over the value of £100 (or £250 if the gift is given in the form of travel or entertainment costs).
+ * We never give or accept gifts of cash (or cash equivalents, such as vouchers) irrespective of the value.
+ * We always follow the approval procedures under our global Gift and Entertainment Policy before accepting other kinds of gifts, including travel, accommodation or entertainment, in particular for gifts with a value of £50 or more.
+ * Gifts with a value above £100 (or £250 if the gift is given in the form of travel, accomodation or entertainment) will in most instances be excessive and therefore unacceptable.
 
 ### 10. Company Resources
 
@@ -127,4 +127,4 @@ Have you found that something in this document is missing, incorrect or otherwis
 
 ## Versioning
 
-We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.2.
+We use semantic versioning for our Sociomantic Code of Conduct and are currently at v1.2.3.

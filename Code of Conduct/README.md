@@ -1,8 +1,12 @@
-# Sociomantic Code of Conduct v1.2.2
+# Sociomantic Code of Conduct v1.2.3
 
 Our Code of Conduct is intended to create a safe and enjoyable working atmosphere for our employees internally as well as our fellow beings externally as well.
 
 # Change Log
+
+## v1.2.3
+
+ * Adjusted Bribery section wording for clarity.
 
 ## v1.2.2
 
