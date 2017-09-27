@@ -1,3 +1,7 @@
+---
+layout: coc
+---
+
 # Sociomantic Code of Conduct
 
 v1.2.3
