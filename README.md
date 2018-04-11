@@ -7,3 +7,7 @@ This repo is intended to hold cultural and process-related materials from inside
 ## Versioning
 
 Based on the unique model of this repository it will not itself be controlled with semantic versioning. Individual documents or collections of documents will be, though. Please review to their own README files for more information.
+
+## Code of Conduct
+
+Our [Code of Conduct](Code of Conduct.md) is intended to create a safe and enjoyable working atmosphere for our employees internally as well as our fellow beings externally as well.

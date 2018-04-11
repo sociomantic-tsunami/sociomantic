@@ -1,6 +1,6 @@
 # Sociomantic Code of Conduct v1.2.3
 
-Our Code of Conduct is intended to create a safe and enjoyable working atmosphere for our employees internally as well as our fellow beings externally as well.
+Our [Code of Conduct](Sociomantic Code of Conduct.md) is intended to create a safe and enjoyable working atmosphere for our employees internally as well as our fellow beings externally as well.
 
 # Change Log
 
