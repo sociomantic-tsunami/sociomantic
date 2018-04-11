@@ -27,7 +27,7 @@ the process.
 1. Please try and pay attention to all the comments and address them all.
 1. Reviewers can mark a PR as "changes requested" or "approved".
 1. Once a PR has been approved by at least one reviewer and there are no
-   outstanding comments that have not been addressed from other reviewers,
+   outstanding comments from other reviewers that have not been addressed,
    either a reviewer or the submitter (providing they have push access) can
    rebase and merge the PR.
 1. Repo owners will try to review PRs promptly, but feel free to give a "Ping!"
